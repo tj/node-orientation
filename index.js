@@ -6,7 +6,7 @@
 var exec = require('child_process').exec;
 
 module.exports = function(file, fn){
-  var cmd = 'exiftool -Orientation -n ' + file;
+  var cmd = 'exiftool -Orientation -Rotation -n ' + file;
   exec(cmd, function(err, stdout){
     if (err) return fn(err);
 
