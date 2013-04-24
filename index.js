@@ -12,6 +12,9 @@ module.exports = function(file, fn){
 
     try {
       var n = parseInt(stdout.split(':')[1], 10);
+      if (3 == n) n = 180;
+      if (6 == n) n = 90;
+      if (8 == n) n = 270;
     } catch (err) {
       return fn(err);
     }
