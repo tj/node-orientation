@@ -1,5 +1,9 @@
 {
   "name": "orientation",
   "description": "image orientation with exiftool",
-  "version": "0.2.0"
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visionmedia/node-orientation.git"
+  }
 }
